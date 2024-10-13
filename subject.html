@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sub.css">
+    <title>Personalized Storybook Generator</title>
+</head>
+<body>
+    <form id="storyForm">
+        <label for="childName">Child's Name:</label>
+        <input type="text" id="childName" name="childName" required>
+
+        <label for="favoriteAnimal">Favorite Animal:</label>
+        <input type="text" id="favoriteAnimal" name="favoriteAnimal" required>
+
+        <label for="Theme">Select a Theme:</label>
+        <select id="Theme" name="Theme" required>
+            <option value="adventure">Adventure</option>
+            <option value="Superheroes">Superheroes</option>
+            <option value="Dinosaurs">Dinosaurs</option>
+            <option value="friendship">Friendship</option>
+            <option value="animals">Animals</option>
+            <option value="Cars & Vehicles">Cars & Vehicles</option>
+            <option value="Universe & Space">Universe & Space</option>
+            <option value="Princess & Fantasy">Princess & Fantasy</option>
+            <option value="Nature & Outdoors">Nature & Outdoors</option>
+        </select>
+
+        <label for="color">Preferred Color Theme:</label>
+        <input type="color" id="color" name="color" value="#ffcc00" required>
+
+        <button type="button" onclick="generateStorybook()">Generate Storybook</button>
+    </form>
+
+    <div id="loading" style="display:none;">Generating your storybook... Please wait!</div>
+    <div id="storyOutput"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
